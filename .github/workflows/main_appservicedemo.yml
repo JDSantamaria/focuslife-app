@@ -32,7 +32,7 @@ jobs:
       - name: Copy standalone output
         working-directory: ./frontend
         run: |
-          cp -r .next/standalone ./deploy
+          cp -r .next/standalone/* ./deploy/
           cp -r .next/static ./deploy/.next/static
           cp -r public ./deploy/public
       
@@ -71,5 +71,6 @@ jobs:
           slot-name: 'Production'
           package: ./app
           
+
 
 
